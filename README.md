@@ -1,5 +1,6 @@
 These selenium test scripts will be used as sanity test after deployment.
 
+```bash
 yum install -y ntp
 ntpdate time.apple.com
 # install java 1.8
@@ -53,3 +54,4 @@ pip2 install selenium
 python2 /vagrant/selenium/good_test_chrome_no_proxy.py
 
 python2 /vagrant/selenium/good_test_firefox_no_proxy.py
+```
