@@ -10,18 +10,19 @@ chrome_options.add_argument("--headless") # Runs Chrome in headless mode.
 
 driver = webdriver.Chrome(options=chrome_options)
 driver.get("http://www.python.org")
+print(driver.title)
 assert "Python" in driver.title
 elem = driver.find_element_by_name("q")
 elem.clear()
 elem.send_keys("pycon")
 elem.send_keys(Keys.RETURN)
 
-#print("Levent's password:")
-#print(@@password@@)
+print("Levent's password:")
+print(@@password@@)
 
 time.sleep(4)
 
-print(driver.page_source.encode("utf-8"))
+#print(driver.page_source.encode("utf-8"))
 
 assert "No results found." not in driver.page_source
 
