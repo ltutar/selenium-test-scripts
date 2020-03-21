@@ -16,8 +16,8 @@ elem.clear()
 elem.send_keys("pycon")
 elem.send_keys(Keys.RETURN)
 
-print("Levent's password:")
-print(@@password@@)
+#print("Levent's password:")
+#print(@@password@@)
 
 time.sleep(4)
 
