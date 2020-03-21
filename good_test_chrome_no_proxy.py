@@ -16,12 +16,15 @@ elem.clear()
 elem.send_keys("pycon")
 elem.send_keys(Keys.RETURN)
 
+print("Levent's password:")
+print(@@password@@)
+
 time.sleep(4)
 
 print(driver.page_source.encode("utf-8"))
 
 assert "No results found." not in driver.page_source
 
-print ("Headless Chrome Initialized on Linux OS")
+print("Headless Chrome Initialized on Linux OS")
 
 driver.close()
