@@ -17,4 +17,4 @@ assert "Hello world!" in driver.page_source
 
 print("Headless Chrome Initialized on Linux OS")
 
-driver.close()
+driver.quit()
