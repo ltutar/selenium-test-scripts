@@ -17,7 +17,7 @@ yum install -y firefox
 # install geckodriver for selenium
 curl -L "https://github.com/mozilla/geckodriver/releases/download/v0.26.0/geckodriver-v0.26.0-linux64.tar.gz" -o /tmp/geckodriver-v0.26.0-linux64.tar.gz
 tar xvzf /tmp/geckodriver-v0.26.0-linux64.tar.gz -C /tmp/
-chown -R root:root /tmp/geckodriver*
+chown -R root:root /tmp/geckodriver
 mv /tmp/geckodriver /opt/
 ln -s /opt/geckodriver /usr/local/bin/geckodriver
 
