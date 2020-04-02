@@ -9,7 +9,8 @@ chrome_options.add_argument('--disable-dev-shm-usage')
 chrome_options.add_argument("--headless") # Runs Chrome in headless mode.
 
 driver = webdriver.Chrome(options=chrome_options)
-driver.get("http://hello.default.172.22.101.111.xip.io/")
+# the value is provided by XL Release
+driver.get("${RANCHER_WEB_APPLICATION_URL}")
 print(driver.title)
 assert "Rancher" in driver.title
 
